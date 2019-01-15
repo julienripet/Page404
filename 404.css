@@ -1,0 +1,58 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-color: lightgray;
+}
+#FullPage {
+    padding-top: 50px;
+    padding-left: 3%;
+    padding-right:3%;
+    padding-bottom:50px;
+    margin: 2%;
+    background-image: url("Pictures/Background_Lorem.png");
+    border-radius: 15px;
+    color: white;
+    text-align: center;
+
+  text-shadow:
+   -1px -1px 0 #000,  
+    1px -1px 0 #000,
+    -1px 1px 0 #000,
+     1px 1px 0 #000;
+}
+a{
+    color: grey;
+    text-decoration: none;
+    border-bottom: 1px solid black ;
+}
+@keyframes WaveTest{
+    0%{background-image:radial-gradient(rgb(70, 221, 70), rgb(70, 221, 70), rgb(70, 221, 70));}
+    20%{background-image:radial-gradient(white, rgb(70, 221, 70), rgb(70, 221, 70));}
+    40%{background-image:radial-gradient(grey, white, rgb(70, 221, 70));}
+    60%{background-image:radial-gradient(rgb(70, 221, 70), grey, white);}
+    80%{background-image:radial-gradient(wrgb(70, 221, 70), rgb(70, 221, 70), grey);}
+    100%{background-image:radial-gradient(rgb(70, 221, 70), rgb(70, 221, 70), rgb(70, 221, 70));};
+}
+#Animation{
+    background-color:rgb(70, 221, 70);
+    position: absolute;
+    display: inline-block;
+    left:48%;
+    height: 100px;
+    width:100px;
+    border-radius:50px;
+}
+#Animation:hover{
+    height: 100px;
+    width:100px;
+    border-radius:50px;
+    animation: WaveTest 0.45s linear infinite normal ;
+}
+footer{
+    position: absolute;
+    bottom:7%;
+    display: block;
+  margin-left: auto;
+  margin-right: auto;
+    
+}
